@@ -1,0 +1,824 @@
+/*Geral*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Poppins', Helvetica, sans-serif;
+}
+
+.container {
+  width: 90%;
+  height: 100%;
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+  padding: 0 12px;
+}
+
+/*Header*/
+header {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: thistle;
+  background-image: url('images/background-header.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.menu-mobile {
+  display: none;
+}
+
+.close {
+  display: none;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+}
+
+nav .logo {
+  font-weight: 700;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li a {
+  margin-left: 32px;
+  transition: 0.3s;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  display: block;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+nav .active {
+  font-weight: bold;
+  text-decoration: underline white;
+}
+
+nav ul li a:hover {
+  color: #3c5afd;
+  text-decoration: underline #3c5afd;
+}
+
+.wrapper {
+  height: 100%;
+  margin: 16px 0;
+  padding: 16px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+
+.wrapper div {
+  margin: 40px 0 60px 0;
+  max-width: 740px;
+}
+
+.wrapper div span {
+  margin: 16px 0;
+  color: white;
+}
+
+.wrapper div h1 {
+  margin: 32px 0;
+  color: white;
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 58px;
+}
+
+.wrapper div .cadastrar-se {
+  margin: 32px 0;
+}
+
+.wrapper .cadastrar-se {
+  width: 220px;
+  padding: 16px 16px;
+  background-color: #3c5afd;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.wrapper .cadastrar-se {
+  text-decoration: none;
+  color: white;
+}
+
+.wrapper .cadastrar-se:hover {
+  background-color: rgb(15, 50, 245);
+}
+
+.wrapper .cadastrar-se img {
+  margin-left: 22px;
+}
+
+.doacao {
+  margin-left: 12px;
+  width: 220px;
+  padding: 16px 16px;
+  background-color: #a4c639;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  color: white;
+  text-decoration: none;
+}
+
+/*Datas*/
+.datas {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 0;
+  margin-top: -80px;
+  position: absolute;
+}
+
+.conteudo {
+  height: 190px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.conteudo div {
+  background: white;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 32px;
+}
+
+.conteudo div img {
+  width: 48px;
+  margin-bottom: 16px;
+}
+
+.conteudo div p {
+  margin-bottom: 5px;
+}
+
+.conteudo .ios {
+  border: 1px solid #a7a7ae;
+}
+
+.conteudo .ios span {
+  color: #a7a7ae;
+}
+
+.conteudo .android {
+  border: 1px solid #a4c639;
+}
+
+.conteudo .android span {
+  color: #a4c639;
+}
+
+.conteudo .reactnative {
+  border: 1px solid #61dafb;
+}
+
+.conteudo .reactnative span {
+  color: #61dafb;
+}
+
+.conteudo .react {
+  width: 56px;
+  margin-bottom: 32px;
+}
+
+.conteudo .flutter {
+  border: 1px solid #02579b;
+}
+
+.conteudo .flutter span {
+  color: #02579b;
+}
+
+.conteudo .nativescript {
+  border: 1px solid #3c5afd;
+}
+
+.conteudo .nativescript span {
+  color: #3c5afd;
+}
+
+/*Como funciona*/
+.como-funciona {
+  width: 100%;
+  margin-top: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #262627;
+  margin-bottom: 50px;
+}
+
+.como-funciona .container {
+  flex-direction: row;
+}
+
+.como-funciona .container div {
+  width: 50%;
+}
+
+.como-funciona h2 {
+  font-size: 42px;
+  margin-bottom: 32px;
+}
+
+.como-funciona p {
+  font-size: 16px;
+  line-height: 26px;
+  max-width: 750px;
+  margin-bottom: 16px;
+}
+
+.como-funciona a {
+  text-decoration: none;
+  color: #3c5afd;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.cadastrar-se {
+  margin-top: 32px;
+}
+
+.como-funciona .arrow {
+  margin-left: 22px;
+}
+
+.como-funciona .ilustracao-aula {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.como-funciona .ilustracao-aula img {
+  width: 100%;
+}
+
+/*O que você vai aprender*/
+.oque-voce-vai-aprender {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.oque-voce-vai-aprender .container {
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oque-voce-vai-aprender h3 {
+  margin: 32px 0;
+  font-size: 42px;
+}
+
+.oque-voce-vai-aprender .cursos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 80px 20px;
+}
+
+.oque-voce-vai-aprender .cursos {
+  margin: 48px 0;
+  width: 100%;
+}
+
+.oque-voce-vai-aprender .cursos .curso {
+  background-color: white;
+  height: 500px;
+  max-height: 500px;
+  box-shadow: 1px 1px 15px 2px #00000029;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 16px 0;
+  align-items: center;
+  max-width: 375px;
+}
+
+.instrutor {
+  width: 90%;
+  height: 150px;
+  background-color: #a7a7ae;
+  border-radius: 10px;
+  padding: 16px;
+  box-sizing: border-box;
+  color: white;
+}
+
+.instrutor p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.imagem-instrutor {
+  width: 80px;
+  height: 80px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-top: 12px;
+  margin-right: 12px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.instrutor .imagem-instrutor img {
+  width: 36px;
+}
+
+.detalhes-instrutor {
+  display: flex;
+  align-items: center;
+}
+
+.ios {
+  background-color: #a7a7ae;
+}
+
+.android {
+  background-color: #a4c639;
+}
+
+.reactnative {
+  background-color: #61dafb;
+}
+
+.flutter {
+  background-color: #02579b;
+}
+
+.nativescript {
+  background-color: #3c5afd;
+}
+
+.curso ul {
+  color: #3b3b3b;
+  list-style: none;
+  margin: 32px 0 60px 0;
+  width: 80%;
+}
+
+.curso ul li {
+  padding: 16px 0;
+  border-bottom: 1px solid rgb(233, 233, 233);
+}
+
+.btn-curso {
+  color: white;
+  width: 80%;
+  height: 50px !important;
+  border-radius: 10px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sobre-a-livia {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 48px;
+}
+
+.sobre-a-livia .container {
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.sobre-a-livia .container div {
+  width: 50%;
+  margin-left: 20px;
+}
+
+.sobre-a-livia .container div p {
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 16px;
+}
+
+.sobre-a-livia .foto-livia img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 4px;
+}
+
+.sobre-a-livia div ul {
+  display: flex;
+  list-style: none;
+}
+
+.sobre-a-livia div ul li {
+  margin-right: 12px;
+  margin-top: 16px;
+}
+
+.sobre-a-livia h4 {
+  margin: 32px 0;
+  font-size: 42px;
+}
+
+/*Footer*/
+footer {
+  width: 100%;
+  background-color: #1f1b24;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+  color: white;
+}
+
+footer .container {
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+footer h5 {
+  font-size: 18px;
+  margin-bottom: 42px;
+}
+
+footer span {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+footer p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #bfc4ce;
+}
+
+/* ==== Modal*/
+
+.modal-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal {
+  background-color: #fff;
+  width: 50%;
+  max-width: 600px;
+  height: auto;
+  max-height: 90vh;
+  margin: 5vh auto;
+  position: relative;
+  overflow: scroll;
+}
+
+.modal .close-modal {
+  color: black;
+  position: absolute;
+  right: 24px;
+  top: 24px;
+  cursor: pointer;
+}
+
+.closeIconModal {
+  width: 18px;
+}
+
+.modal-content .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 80px 24px 32px 24px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.modal-content span {
+  color: #3c5afd;
+  font-size: 28px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 100%;
+  margin-top: 32px;
+}
+
+form label {
+  margin-bottom: 5px;
+}
+
+form input {
+  margin-bottom: 16px;
+  height: 42px;
+  border-radius: 5px;
+  padding: 4px 16px;
+  border: 1px solid #dddfe7;
+}
+
+form .arquivo {
+  border: none;
+  padding: 4px 0;
+}
+
+form button {
+  background-color: #a4c639;
+  border-radius: 5px;
+  width: 190px;
+  height: 50px;
+  color: white;
+  border: none;
+  font-size: 16px;
+  align-self: center;
+}
+
+.progress-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress-bar span {
+  font-size: 18px;
+}
+
+.div-hide {
+  display: none;
+}
+
+.div-show {
+  display: flex;
+}
+
+.form-register {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.error-message {
+  width: 100%;
+  height: 50px;
+  background-color: rgba(235, 77, 75, 0.4);
+  border: 1px solid #eb4d4b;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 20px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s;
+}
+
+.error-message span {
+  font-size: 16px;
+  color: #2d3436;
+}
+
+#uploader {
+  width: 100%;
+}
+
+/*Modal Active */
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Breakpoint 900px*/
+
+@media (max-width: 900px) {
+  nav ul {
+    display: none;
+  }
+  .mobile {
+    background: #1f1b24;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    padding: 42px 0;
+    display: none;
+    top: 0;
+    left: 0;
+  }
+
+  .mobile li {
+    padding: 24px 0;
+    font-weight: bold;
+    border-bottom: 1px solid rgb(235, 235, 235, 0.1);
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .menu-mobile {
+    display: block;
+  }
+
+  .close {
+    position: absolute;
+    right: 18px;
+    top: 18px;
+    display: block;
+  }
+
+  .datas {
+    margin: 48px 0;
+    position: initial;
+    height: auto;
+  }
+
+  .datas .conteudo {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .datas .conteudo div {
+    margin: 0 16px 16px 0;
+    width: 150px;
+    padding: 16px;
+  }
+
+  .como-funciona {
+    margin-top: 70px;
+  }
+
+  .como-funciona .container {
+    flex-direction: column;
+  }
+
+  .como-funciona .container div {
+    width: 100%;
+  }
+
+  .ilustracao-aula img {
+    margin-top: 42px;
+  }
+
+  .oque-voce-vai-aprender {
+    margin-top: 70px;
+  }
+
+  .cursos {
+    display: grid;
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  .sobre-a-livia .container {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .sobre-a-livia .container .foto-livia {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sobre-a-livia .container div {
+    width: 90%;
+    margin-top: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    height: auto;
+    background-attachment: initial;
+  }
+  .wrapper div h1 {
+    font-size: 32px;
+  }
+
+  .cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .cta a {
+    margin: 0;
+    width: 80% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cursos {
+    display: grid;
+    grid-template-columns: 1fr !important;
+  }
+
+  .curso {
+    width: 100%;
+    align-self: center;
+    justify-self: center;
+  }
+  h2,
+  h3,
+  h4 {
+    font-size: 24px !important;
+  }
+
+  footer p {
+    text-align: center;
+  }
+
+  form {
+    margin-top: 10px;
+  }
+
+  .modal {
+    background-color: #fff;
+    width: 90%;
+    max-width: 600px;
+    height: auto;
+    max-height: 90vh;
+    margin: 5vh auto;
+    position: relative;
+    overflow: scroll;
+  }
+
+  .modal-content span {
+    color: #3c5afd;
+    font-size: 16px;
+    margin-top: 28px;
+  }
+
+  form label {
+    font-size: 14px;
+  }
+
+  .modal-content .container {
+    padding: 29px 24px 32px 24px;
+  }
+}
+
+@media (max-width: 375px) {
+  .wrapper div h1 {
+    font-size: 24px;
+    line-height: 34px;
+  }
+}
