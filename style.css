@@ -328,8 +328,7 @@ nav ul li a:hover {
 
 .oque-voce-vai-aprender .cursos .curso {
   background-color: white;
-  height: 500px;
-  max-height: 500px;
+  height: auto;
   box-shadow: 1px 1px 15px 2px #00000029;
   border-radius: 10px;
   display: flex;
